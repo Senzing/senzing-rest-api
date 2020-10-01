@@ -1864,7 +1864,7 @@ paths:
         required: false
         schema:
           type: integer
-          format: int8
+          format: int32
           minimum: 0
           maximum: 100
           default: 3
@@ -2114,7 +2114,7 @@ paths:
         required: false
         schema:
           type: integer
-          format: int8
+          format: int32
           minimum: 0
           maximum: 100
           default: 3
@@ -2129,7 +2129,7 @@ paths:
         required: false
         schema:
           type: integer
-          format: int8
+          format: int32
           minimum: 0
           maximum: 100
           default: 1
@@ -3405,7 +3405,7 @@ components:
               description: >-
                 The HTTP status response code.
               type: integer
-              format: int16
+              format: int32
             timestamp:
               description: >-
                 The timestamp of the operation's execution.
@@ -4168,7 +4168,7 @@ components:
             The number of degrees this entity is separated from the
             entity that was affected.
           type: integer
-          format: int8
+          format: int32
         flags:
           description: >-
             The array of flags that were triggered making this entity
@@ -5350,6 +5350,7 @@ components:
         "records".  Internally, it is not always based on "record" because
         multiple records that are effectively identical collapse into a single
         perspective.
+      type: object
       properties:
         internalId:
           description: >-
